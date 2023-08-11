@@ -1,0 +1,213 @@
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.0.46/css/materialdesignicons.css');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        :root {
+            --warna_1: <?= $config->warna1; ?>;
+            --warna_2: <?= $config->warna2; ?>;
+            --warna_3: <?= $config->warna3; ?>;
+            --warna_4: <?= $config->warna4; ?>;
+            --warna_5: <?= $config->warna5; ?>;
+            --warna_6: <?= $config->warna6; ?>;
+        }
+
+        body {
+            background: var(--warna_1);
+            font-family: Roboto;
+        }
+        .content {
+            max-width: 480px;
+            margin: auto;
+            background: var(--warna_5);
+        }
+        .header {
+            width: 100%;
+            height: 240px;
+            background: var(--warna_2);
+            border-radius: 0 0 1.5rem 1.5rem;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .header img {
+            max-width: 100%;
+            max-height: 80px;
+        }
+        .content-body {
+            padding: 0 16px;
+        }
+        .content-body form input {
+            outline: none;
+            margin-top: -30px;
+            border: none !important;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+        }
+        .my-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .product .box {
+            padding: 0.8rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border-radius: 0.5rem;
+            text-align: center;
+            background: var(--warna_6);
+            display: block;
+            text-decoration: none;
+            color: #333;
+            min-height: 143px;
+            border: 1px solid var(--warna_2) !important;
+        }
+        .product .box img {
+            width: 56px;
+            display: block;
+            margin: auto;
+            margin-top: calc(1.5rem * -1);
+            border-radius: 0.5rem;
+        }
+        .product .box span {
+            font-size: xx-small;
+            margin-top: 15px;
+            display: block;
+            text-transform: uppercase;
+            color: #004c64;
+        }
+        .product .box p {
+            margin-top: 0.5rem;
+            font-weight: 500;
+            font-size: 0.75rem;
+            font-family: Roboto,serif;
+        }
+        .lb {
+            border-top: 7px solid var(--warna_1);
+        }
+        .footer img {
+            padding-top: 2.5rem 0;
+        }
+        .menu-bottom {
+            position: fixed;
+            bottom: 0;
+            background: #fff;
+            width: 100%;
+            max-width: 480px;
+            border-top: 1px solid #E2E8F0;
+            padding: 0.25rem 0;
+            text-align: center;
+            z-index: 2;
+        }
+        .menu-bottom i {
+            font-size: 24px;
+            color: #004c64;
+        }
+        .menu-bottom a {
+            text-decoration: none;
+        }
+        .menu-bottom a.active i, .menu-bottom a.active p {
+            color: var(--warna_2) !important;
+        }
+        .menu-bottom p {
+            color: #004c64;
+            font-size: 0.875rem;
+            margin-top: -5px;
+            margin-bottom: 3px;
+            font-weight: 400;
+        }
+        .text-copyright {
+            color: var(--warna_2);
+            font-size: 0.875rem;
+        }
+        .sosmed {
+            margin-bottom: 20px;
+        }
+        .sosmed a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .sosmed a img {
+            width: 24px;
+        }
+        .item .metode {
+            margin: 5px 0;
+            background: var(--warna_6);
+            border-radius: 8px;
+            padding: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+            border: 1px solid var(--warna_2) !important;
+        }
+        .my-form label {
+            font-size: 1rem;
+        }
+        .my-form .form-control {
+            background: #edf2f7;
+            margin-top: 6px;
+            border: 2px solid #edf2f7 !important;
+        }
+        .my-form .form-control:active, .my-form .form-control:focus {
+            border-color: #3182ce !important;
+            box-shadow: none !important;
+            outline: none !important;
+        }
+        .color {
+            color: var(--warna_2) !important;
+        }
+        .bg {
+            background-color: var(--warna_2);
+        }
+        .btn {
+            border: none;
+            font-weight: 500;
+        }
+        .btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+            background: var(--warna_2);
+        }
+        .title {
+            font-size: 1.125rem;
+            margin-top: 5px;
+            position: absolute;
+        }
+        .bg-primary {
+            background: var(--warna_2) !important;
+        }
+        .bg-secondary {
+            background: var(--warna_3) !important;
+         }
+        .bg-white-custom {
+            background: var(--warna_4) !important;
+        }
+        .cursor-pointer {
+            cursor: pointer;
+        }
+        #toolbarContainer {
+            display: none;
+        }
+        .btn.disabled, .btn:disabled, fieldset:disabled {
+            background: #56ccfd;
+            border-color: #56ccfd;
+        }
+        .fw-500 {
+            font-weight: 500;
+        }
+        .otp .col-2 {
+            padding: 0 2px;
+        }
+        .method-list {
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .method-list.active {
+            border-color: var(--warna_2) !important;
+        }
+        .method-list.active:before {
+            display: inline-block;
+            content: 'L';
+            position: relative;
+            background: var(--warna_2);
+            margin-left: -12px;
+            height: 53px;
+            line-height: 40px;
+            width: 20px;
+            text-align: center;
+            color: #fff;
+            top: -23px;
+            transform: rotate(45deg) scaleX(-1);;
+        }
+        .method-list.active table {
+            margin-top: -53px;
+        }
